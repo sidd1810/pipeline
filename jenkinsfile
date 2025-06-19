@@ -1,5 +1,13 @@
-pipeline
+pipeline{
+agent any
 
-stage SCM
+stages{
+         stage('SCM') {
+	         steps {
+		        echo "git pull code1"
+		 }
+        }
+}
 
+}
  
